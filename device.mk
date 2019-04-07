@@ -136,7 +136,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.msm8953 \
     libmm-qcamera \
-    GoogleCameraMod
+    Camera2
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -263,11 +263,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
-
-#Lawnchair
-PRODUCT_PACKAGES += \
-    Lawnchair \
-    LawnConf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
@@ -423,7 +418,3 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# AdvancedControls
-PRODUCT_PACKAGES += \
-    AdvancedControls \
